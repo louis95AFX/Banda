@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banda Electrical | Powering Your World</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFD700',
+                        secondary: '#4169E1',
+                        accent: '#FF6347'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #4169E1 0%, #FFD700 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-4">
+                    <i data-feather="zap" class="text-primary h-8 w-8"></i>
+                    <span class="font-bold text-xl text-gray-800">Banda Electrical</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-primary transition">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition">Contact</a>
+                    <a href="#book" class="bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition">Book Now</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 focus:outline-none">
+                        <i data-feather="menu" class="h-6 w-6 text-gray-700"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Powering Your World with Precision</h1>
+                    <p class="text-xl mb-8">24/7 reliable electrical services for homes and businesses. Fast response. Transparent pricing. Expert solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#book" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Get Instant Quote</a>
+                        <a href="tel:+1234567890" class="flex items-center border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">
+                            <i data-feather="phone" class="mr-2"></i> (123) 456-7890
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="Banda.jpg" alt="Electrician at work" class="rounded-xl shadow-2xl max-w-md w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Electrical Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Comprehensive solutions for all your electrical needs</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full inline-block mb-4">
+                        <i data-feather="home" class="text-primary h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Residential Wiring</h3>
+                    <p class="text-gray-600 mb-4">Complete home electrical installations, repairs, and upgrades for safe and efficient power.</p>
+                    <a href="#" class="text-primary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i></a>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full inline-block mb-4">
+                        <i data-feather="briefcase" class="text-primary h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Commercial Solutions</h3>
+                    <p class="text-gray-600 mb-4">Expert electrical services for businesses, retail spaces, and office buildings.</p>
+                    <a href="#" class="text-primary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i></a>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full inline-block mb-4">
+                        <i data-feather="alert-triangle" class="text-primary h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Emergency Repairs</h3>
+                    <p class="text-gray-600 mb-4">24/7 emergency electrical services when you need them most.</p>
+                    <a href="#" class="text-primary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i></a>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full inline-block mb-4">
+                        <i data-feather="sun" class="text-primary h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Solar Installations</h3>
+                    <p class="text-gray-600 mb-4">Professional solar panel installation and integration with your existing system.</p>
+                    <a href="#" class="text-primary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i></a>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full inline-block mb-4">
+                        <i data-feather="clipboard" class="text-primary h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Safety Inspections</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive electrical safety checks and compliance certificates.</p>
+                    <a href="#" class="text-primary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i></a>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="service-card bg-white rounded-xl shadow-md p-6 transition duration-300">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full inline-block mb-4">
+                        <i data-feather="battery-charging" class="text-primary h-8 w-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">EV Charging Stations</h3>
+                    <p class="text-gray-600 mb-4">Professional installation of electric vehicle charging solutions.</p>
+                    <a href="#" class="text-primary font-semibold flex items-center">Learn more <i data-feather="arrow-right" class="ml-2 h-4 w-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Why Choose Banda Electrical?</h2>
+                    <p class="text-gray-600 mb-6">We're revolutionizing electrical services with our customer-first approach, combining decades of expertise with modern solutions.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i data-feather="check-circle" class="text-primary h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Licensed & Insured</h4>
+                                <p class="text-gray-600">All our electricians are fully licensed, insured, and background-checked.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i data-feather="clock" class="text-primary h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Fast Response</h4>
+                                <p class="text-gray-600">Average response time under 2 hours for emergencies.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i data-feather="dollar-sign" class="text-primary h-6 w-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800 mb-1">Transparent Pricing</h4>
+                                <p class="text-gray-600">No hidden fees - upfront quotes before any work begins.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Our Promise</h3>
+                        <p class="text-gray-600 mb-6">At Banda Electrical, we believe in delivering exceptional electrical services with integrity and professionalism. Our team of certified electricians is committed to your complete satisfaction.</p>
+                        
+                        <div class="flex items-center mb-6">
+                            <img src="http://static.photos/people/200x200/1" alt="Master Electrician" class="rounded-full h-16 w-16 object-cover mr-4">
+                            <div>
+                                <h4 class="font-bold text-gray-800">John Carter</h4>
+                                <p class="text-gray-600">Master Electrician, 15+ years experience</p>
+                            </div>
+                        </div>
+                        
+                        <a href="#contact" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold inline-block hover:bg-opacity-90 transition">Meet Our Team</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-primary bg-opacity-5">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Don't just take our word for it</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Banda Electrical fixed our electrical issue in under an hour when no one else would come out on a weekend. Professional, efficient, and reasonably priced."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/2" alt="Sarah Johnson" class="rounded-full h-12 w-12 object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah Johnson</h4>
+                            <p class="text-gray-600">Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"We've used Banda Electrical for all our retail locations. Their team understands commercial electrical needs and always delivers on time and on budget."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/3" alt="Michael Rodriguez" class="rounded-full h-12 w-12 object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Michael Rodriguez</h4>
+                            <p class="text-gray-600">Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-400 flex">
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                            <i data-feather="star" class="h-5 w-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"The solar panel installation was flawless. They handled everything from permits to final inspection. Couldn't be happier with the results and our reduced energy bills!"</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/4" alt="Emily Chen" class="rounded-full h-12 w-12 object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Emily Chen</h4>
+                            <p class="text-gray-600">Solar Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Ready to Power Up?</h2>
+                    <p class="text-gray-600 mb-6">Schedule your service today. We offer free estimates and same-day service for most requests.</p>
+                    
+                    <div class="bg-gray-100 p-6 rounded-xl mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4">
+                                <i data-feather="phone" class="text-primary h-5 w-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Call Us 24/7</h4>
+                                <a href="tel:+1234567890" class="text-primary hover:underline">(123) 456-7890</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4">
+                                <i data-feather="mail" class="text-primary h-5 w-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Email Us</h4>
+                                <a href="mailto:contact@BandaElectrical.com" class="text-primary hover:underline">contact@BandaElectrical.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition">
+                            <i data-feather="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 text-white p-3 rounded-full hover:bg-blue-500 transition">
+                            <i data-feather="twitter" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition">
+                            <i data-feather="instagram" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Request a Quote</h3>
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your name">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your email">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your phone number">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Needed</label>
+                                <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="">Select a service</option>
+                                    <option value="residential">Residential Electrical</option>
+                                    <option value="commercial">Commercial Electrical</option>
+                                    <option value="emergency">Emergency Repair</option>
+                                    <option value="solar">Solar Installation</option>
+                                    <option value="inspection">Safety Inspection</option>
+                                    <option value="other">Other Service</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Details</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Describe your electrical needs"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 transition">Submit Request</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600">Everything you need to know about our services</p>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-question flex items-center justify-between w-full text-left">
+                        <h3 class="font-bold text-gray-800">What areas do you serve?</h3>
+                        <i data-feather="chevron-down" class="h-5 w-5 text-primary transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-600 hidden">
+                        We currently service the entire metropolitan area including all surrounding suburbs. Our service radius is approximately 50 miles from downtown. Contact us to confirm if we cover your specific location.
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-question flex items-center justify-between w-full text-left">
+                        <h3 class="font-bold text-gray-800">Are your electricians licensed and insured?</h3>
+                        <i data-feather="chevron-down" class="h-5 w-5 text-primary transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-600 hidden">
+                        Absolutely. All our electricians are fully licensed, insured, and undergo regular training to stay current with the latest electrical codes and safety standards. We carry both liability insurance and workers' compensation coverage for your protection.
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-question flex items-center justify-between w-full text-left">
+                        <h3 class="font-bold text-gray-800">What are your rates?</h3>
+                        <i data-feather="chevron-down" class="h-5 w-5 text-primary transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-600 hidden">
+                        Our rates vary based on the type and complexity of the job. We offer transparent pricing with no hidden fees. Standard service calls start at $99 which includes the first hour of labor. We provide free estimates for larger projects so you'll know the cost before any work begins.
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-question flex items-center justify-between w-full text-left">
+                        <h3 class="font-bold text-gray-800">Do you offer emergency services?</h3>
+                        <i data-feather="chevron-down" class="h-5 w-5 text-primary transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-600 hidden">
+                        Yes, we provide 24/7 emergency electrical services for urgent situations like power outages, sparking outlets, or other hazardous conditions. Emergency service rates apply after hours, but we'll always prioritize your safety first.
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <button class="faq-question flex items-center justify-between w-full text-left">
+                        <h3 class="font-bold text-gray-800">How soon can you come out?</h3>
+                        <i data-feather="chevron-down" class="h-5 w-5 text-primary transform transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer mt-4 text-gray-600 hidden">
+                        For emergency calls, we typically arrive within 2 hours. Standard service appointments are usually available within 24-48 hours, though we often have same-day availability. We'll always give you an accurate time window when you call.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-4">Still have questions?</p>
+                <a href="#contact" class="bg-primary text-white px-6 py-3 rounded-lg font-semibold inline-block hover:bg-opacity-90 transition">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Power Up Your Property Today</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Whether it's an emergency repair or a planned upgrade, our team is ready to deliver exceptional electrical services with a satisfaction guarantee.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="tel:+1234567890" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition flex items-center justify-center">
+                    <i data-feather="phone" class="mr-2"></i> Call Now
+                </a>
+                <a href="#book" class="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">Get Free Estimate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Column 1 -->
+                <div>
+                    <div class="flex items-center mb-6">
+                        <i data-feather="zap" class="text-primary h-8 w-8"></i>
+                        <span class="font-bold text-xl ml-2">Banda Electrical</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Your trusted partner for all electrical needs, delivering safe, reliable, and efficient solutions.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="facebook" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="twitter" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="instagram" class="h-5 w-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i data-feather="linkedin" class="h-5 w-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Column 2 -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Residential Electrical</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Commercial Electrical</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Emergency Repairs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Solar Installations</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">EV Charging Stations</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Company</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Our Team</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Testimonials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4 -->
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Contact</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i data-feather="map-pin" class="h-5 w-5 text-gray-400 mr-3"></i>
+                            <span class="text-gray-400">123 Electric Ave, Power City</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="phone" class="h-5 w-5 text-gray-400 mr-3"></i>
+                            <a href="tel:+1234567890" class="text-gray-400 hover:text-white transition">(123) 456-7890</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="mail" class="h-5 w-5 text-gray-400 mr-3"></i>
+                            <a href="mailto:contact@BandaElcetrical.com" class="text-gray-400 hover:text-white transition">contact@BandaElectrical.com</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i data-feather="clock" class="h-5 w-5 text-gray-400 mr-3"></i>
+                            <span class="text-gray-400">24/7 Emergency Service</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Banda Electrical. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Licenses</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            // This would toggle a mobile menu (not implemented in this example)
+            alert('Mobile menu would open here in a full implementation');
+        });
+        
+        // FAQ accordion functionality
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Toggle answer visibility
+                answer.classList.toggle('hidden');
+                
+                // Rotate icon
+                if (answer.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+        
+        // Initialize feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
