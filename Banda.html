@@ -21,6 +21,40 @@
         }
     </script>
     <style>
+        /* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon {
+  width: 35px;
+  height: 35px;
+}
+.whatsapp-float {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
         .hero-gradient {
             background: linear-gradient(135deg, #4169E1 0%, #FFD700 100%);
         }
@@ -64,7 +98,7 @@
                     <div class="flex space-x-4">
                         <a href="#book" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition">Get Instant Quote</a>
                         <a href="tel:+1234567890" class="flex items-center border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary transition">
-                            <i data-feather="phone" class="mr-2"></i> (123) 456-7890
+                            <i data-feather="phone" class="mr-2"></i> 073 247 5808 
                         </a>
                     </div>
                 </div>
@@ -541,6 +575,16 @@
                 </div>
             </div>
         </div>
+        <!-- Floating WhatsApp Button -->
+<a href="https://wa.me/+27742475808" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+       alt="Chat with us on WhatsApp" 
+       class="whatsapp-icon">
+</a>
+
     </footer>
 
     <script>
