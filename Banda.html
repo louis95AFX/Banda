@@ -358,42 +358,66 @@
                 <div class="md:w-1/2">
                     <div class="bg-gray-50 p-8 rounded-xl shadow-md">
                         <h3 class="text-2xl font-bold text-gray-800 mb-6">Request a Quote</h3>
-                        <form>
-                            <div class="mb-4">
-                                <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
-                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your name">
-                            </div>
-                            
-                            <div class="mb-4">
-                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
-                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your email">
-                            </div>
-                            
-                            <div class="mb-4">
-                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
-                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your phone number">
-                            </div>
-                            
-                            <div class="mb-4">
-                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Needed</label>
-                                <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                                    <option value="">Select a service</option>
-                                    <option value="residential">Residential Electrical</option>
-                                    <option value="commercial">Commercial Electrical</option>
-                                    <option value="emergency">Emergency Repair</option>
-                                    <option value="solar">Solar Installation</option>
-                                    <option value="inspection">Safety Inspection</option>
-                                    <option value="other">Other Service</option>
-                                </select>
-                            </div>
-                            
-                            <div class="mb-4">
-                                <label for="message" class="block text-gray-700 font-medium mb-2">Details</label>
-                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Describe your electrical needs"></textarea>
-                            </div>
-                            
-                            <button type="submit" class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 transition">Submit Request</button>
-                        </form>
+                       <form action="https://formsubmit.co/louisphiri95@gmail.com" method="POST">
+    <!-- Name -->
+    <div class="mb-4">
+        <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+        <input type="text" id="name" name="name" required
+               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+               placeholder="Your name">
+    </div>
+
+    <!-- Email -->
+    <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+        <input type="email" id="email" name="email" required
+               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+               placeholder="Your email">
+    </div>
+
+    <!-- Phone -->
+    <div class="mb-4">
+        <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+        <input type="tel" id="phone" name="phone"
+               class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+               placeholder="Your phone number">
+    </div>
+
+    <!-- Service -->
+    <div class="mb-4">
+        <label for="service" class="block text-gray-700 font-medium mb-2">Service Needed</label>
+        <select id="service" name="service"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+            <option value="">Select a service</option>
+            <option value="Residential Electrical">Residential Electrical</option>
+            <option value="Commercial Electrical">Commercial Electrical</option>
+            <option value="Emergency Repair">Emergency Repair</option>
+            <option value="Solar Installation">Solar Installation</option>
+            <option value="Safety Inspection">Safety Inspection</option>
+            <option value="Other Service">Other Service</option>
+        </select>
+    </div>
+
+    <!-- Message -->
+    <div class="mb-4">
+        <label for="message" class="block text-gray-700 font-medium mb-2">Details</label>
+        <textarea id="message" name="message" rows="4"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                  placeholder="Describe your electrical needs"></textarea>
+    </div>
+
+    <!-- Hidden Settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+    <!-- Submit -->
+    <button type="submit"
+            class="w-full bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-opacity-90 transition">
+        Submit Request
+    </button>
+</form>
+
                     </div>
                 </div>
             </div>
